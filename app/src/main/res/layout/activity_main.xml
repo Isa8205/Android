@@ -5,19 +5,122 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FF9800">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF9800">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Form"
+            android:textSize="30sp"
+            android:fontFamily="arial"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Hello World"
-            android:textAlignment="center"
-            android:textSize="20dp"/>
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:textColor="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FirstName"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:hint="Enter first name"
+                android:layout_marginHorizontal="5sp"
+                android:layout_marginVertical="15sp"
+                android:padding="5sp"
+                android:background="@color/white"
+                android:id="@+id/firstname"
+                android:inputType="text"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LastName"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:hint="Enter last name"
+                android:layout_marginHorizontal="5sp"
+                android:layout_marginVertical="15sp"
+                android:padding="5sp"
+                android:background="@color/white"
+                android:id="@+id/lastname"
+                android:inputType="text"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="E-mail"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:hint="Enter your email"
+                android:layout_marginHorizontal="5sp"
+                android:layout_marginVertical="15sp"
+                android:padding="5sp"
+                android:background="@color/white"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/phone"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:hint="@string/enter_phone_number"
+                android:layout_marginHorizontal="5sp"
+                android:layout_marginVertical="15sp"
+                android:padding="5sp"
+                android:background="@color/white"
+                android:id="@+id/phone"
+                android:inputType="number"
+                tools:ignore="TextFields"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Send"
+                android:textAlignment="center"
+                android:id="@+id/submit"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

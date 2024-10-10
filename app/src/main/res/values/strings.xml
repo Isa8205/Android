@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InSight</string>
+    <string name="phone">Phone</string>
+    <string name="enter_phone_number">Enter phone number</string>
 </resources>
