@@ -25,6 +25,24 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.email)
         val phone = findViewById<EditText>(R.id.phone)
 
+//        //        Ip address handling
+//        val block1 = findViewById<EditText>(R.id.block1)
+//        val block2 = findViewById<EditText>(R.id.block2)
+//        val block3 = findViewById<EditText>(R.id.block3)
+//        val block4 = findViewById<EditText>(R.id.block4)
+//
+//        // Get the text from each EditText and convert it to a string
+//        val block1Text = block1.text.toString()
+//        val block2Text = block2.text.toString()
+//        val block3Text = block3.text.toString()
+//        val block4Text = block4.text.toString()
+//
+//        // Concatenate the text to form the address
+//        val address = "$block1Text.$block2Text.$block3Text.$block4Text"
+//
+//        // Construct the API URL based on whether the address is empty or not
+//        val api = if (address.isNotBlank()) "http://$address:8000/apis/add-some" else "http://172.16.109.41:8000/apis/add-some"
+
         val submitbtn = findViewById<Button>(R.id.submit)
 
         submitbtn.setOnClickListener {
@@ -34,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             body.put("email", email.text.toString())
             body.put("phone", phone.text.toString())
 
-            val api = "http://172.16.109.41:8000/apis/add-some"
+            val api = "http://172.16.119.29:8000/apis/add-some"
 
             val helper = ApiHelper(applicationContext)
 

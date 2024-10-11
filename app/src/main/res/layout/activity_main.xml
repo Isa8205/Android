@@ -41,7 +41,7 @@
                 android:layout_marginHorizontal="5sp"
                 android:layout_marginVertical="15sp"
                 android:padding="5sp"
-                android:background="@color/white"
+                android:background="@drawable/roundrectangle"
                 android:id="@+id/firstname"
                 android:inputType="text"
                 android:textColor="@color/black"/>
@@ -59,7 +59,7 @@
                 android:layout_marginHorizontal="5sp"
                 android:layout_marginVertical="15sp"
                 android:padding="5sp"
-                android:background="@color/white"
+                android:background="@drawable/roundrectangle"
                 android:id="@+id/lastname"
                 android:inputType="text"
                 android:textColor="@color/black"/>
@@ -77,7 +77,7 @@
                 android:layout_marginHorizontal="5sp"
                 android:layout_marginVertical="15sp"
                 android:padding="5sp"
-                android:background="@color/white"
+                android:background="@drawable/roundrectangle"
                 android:id="@+id/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"/>
@@ -95,11 +95,69 @@
                 android:layout_marginHorizontal="5sp"
                 android:layout_marginVertical="15sp"
                 android:padding="5sp"
-                android:background="@color/white"
+                android:background="@drawable/roundrectangle"
                 android:id="@+id/phone"
                 android:inputType="number"
                 tools:ignore="TextFields"
                 android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ip"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundrectangle"
+                    android:hint="192"
+                    android:id="@+id/block1"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="5sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundrectangle"
+                    android:hint="168"
+                    android:id="@+id/block2"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="5sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundrectangle"
+                    android:hint="045"
+                    android:id="@+id/block3"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="5sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundrectangle"
+                    android:hint="123"
+                    android:id="@+id/block4"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="5sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
